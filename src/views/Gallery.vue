@@ -18,41 +18,19 @@
     components: {
       Navbar,
     },
-    data() {
-      return {
-        images: [],
-      };
+    computed: {
+      images() {
+        return (async function() {
+          // const img = [];
+          return await fetch("https://picsum.photos/v2/list?limit=7")
+            .then((res) => {
+              return res.json();
+            })
+            .then((data) => {
+              return data;
+            });
+        })();
+      },
     },
-    created() {
-      fetch("https://picsum.photos/v2/list?limit=7")
-        .then((res) => {
-          return res.json();
-        })
-        .then((data) => {
-          data.forEach((d: any) => {
-            this.images.push(d.download_url);
-          });
-          return;
-        })
-        .then(() => {
-          console.log(this.images);
-        });
-    },
-    // computed: {
-    //   images() {
-    //     const img:[] = [];
-    //     fetch("https://picsum.photos/v2/list?limit=7")
-    //     .then((res) => {
-    //       return res.json();
-    //     })
-    //     .then((data) => {
-    //       data.forEach((d: any) => {
-    //         img.push(d.download_url)
-    //       })
-    //       console.log(img)
-    //       return img;
-    //     })
-    //   },
-    // }
   });
 </script>
