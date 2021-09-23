@@ -31,8 +31,8 @@
     data() {
       return {
         images: [] as {
-          author: string,
-          download_url: string,
+          author: string;
+          download_url: string;
         }[],
       };
     },
@@ -44,18 +44,27 @@
       //   .then((data) => {
       //     this.images = data;
       //   });
-      const authors: string[] = ["Outdoor Pursuits", "Golf", "Lifestyle", "Landscapes", "Clubhouses", "Wellness"];
-      for (let i=1; i<=6; i++) {
+      const authors: string[] = [
+        "Outdoor Pursuits",
+        "Golf",
+        "Lifestyle",
+        "Landscapes",
+        "Clubhouses",
+        "Wellness",
+      ];
+      for (let i = 1; i <= 6; i++) {
         this.images.push({
-          author: authors[i-1],
+          author: authors[i - 1],
           download_url: require(`@/assets/gallery/${i}.jpg`),
-        })
+        });
       }
     },
   });
 </script>
 
 <style scoped lang="scss">
+  @import url("https://fonts.googleapis.com/css2?family=Average&display=swap");
+
   $first-image: url("https://dxaurk9yhilm4.cloudfront.net/images/7383/jael-rodriguez-AkF5NT0sZy8-unsplash-1-1_210301_200939_35d31212c7a2d4dccdff99afa3f88af5.jpg");
   section.main {
     .gallery {
@@ -69,7 +78,7 @@
         padding-left: 8rem;
         font-size: 4rem;
         color: #fff;
-        font-family: "Times New Roman", Times, serif;
+        font-family: "Average", serif;
 
         @media screen and (max-width: 500px) {
           padding: 1rem;
