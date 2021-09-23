@@ -75,7 +75,6 @@
           subtext: el.subtext,
         });
       });
-      console.log(this.images);
     },
   });
 </script>

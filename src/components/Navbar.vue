@@ -4,19 +4,21 @@
       <Logo />
     </router-link>
     <div class="nav-options">
-      <router-link :to="{ name: 'Home' }" class="nav-option"
+      <router-link :to="{ name: 'Home' }" class="nav-option animated-hr"
         >About DLC</router-link
       >
-      <router-link :to="{ name: 'Home' }" class="nav-option"
+      <router-link :to="{ name: 'Our-Worlds' }" class="nav-option animated-hr"
         >Our Worlds</router-link
       >
-      <router-link :to="{ name: 'Home' }" class="nav-option"
+      <router-link :to="{ name: 'Home' }" class="nav-option animated-hr"
         >Experiences</router-link
       >
-      <router-link :to="{ name: 'Gallery' }" class="nav-option"
+      <router-link :to="{ name: 'Gallery' }" class="nav-option animated-hr"
         >Gallery</router-link
       >
-      <router-link :to="{ name: 'Home' }" class="nav-option">Press</router-link>
+      <router-link :to="{ name: 'Home' }" class="nav-option animated-hr"
+        >Press</router-link
+      >
     </div>
   </nav>
 </template>
@@ -41,7 +43,7 @@
     left: 0;
     width: 100%;
     z-index: 2;
-    
+
     // horizontal spacing
     padding: 3rem 6rem;
     @media screen and (max-width: 900px) {
@@ -73,9 +75,15 @@
       .nav-option {
         text-decoration: none;
         color: #fff;
+
+        // overwrite custom hr when the page is active
+        &.router-link-active::after,
+        &.router-link-active:hover::after {
+          width: 100%;
+          height: 2px;
+        }
       }
     }
-
 
     .logo {
       width: 14rem;

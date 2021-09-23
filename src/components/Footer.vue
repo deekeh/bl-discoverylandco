@@ -8,7 +8,7 @@
             GET IN TOUCH
           </header>
           <address class="content">
-            <a href="tel:(480) 624-5200">
+            <a class="animated-hr" href="tel:(480) 624-5200">
               (480) 624-5200
             </a>
             <a href="mailto:mail@discoverylandco.com">
@@ -17,39 +17,39 @@
           </address>
         </div>
         <div class="about table">
-          <router-link :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'Home' }">
             About DLC
           </router-link>
-          <router-link :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'Our-Worlds' }">
             Our Worlds
           </router-link>
-          <router-link :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'Home' }">
             Experiences
           </router-link>
-          <router-link :to="{ name: 'Gallery' }">
+          <router-link class="animated-hr" :to="{ name: 'Gallery' }">
             Gallery
           </router-link>
-          <router-link :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'Home' }">
             Press
           </router-link>
         </div>
         <div class="magazine table">
-          <router-link :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'Home' }">
             Magazine
           </router-link>
-          <router-link :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'Home' }">
             Careers
           </router-link>
-          <router-link :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'Home' }">
             Foundation
           </router-link>
-          <router-link :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'Home' }">
             Company
           </router-link>
-          <router-link :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'Home' }">
             Contact
           </router-link>
-          <router-link :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'Home' }">
             Privacy
           </router-link>
         </div>
