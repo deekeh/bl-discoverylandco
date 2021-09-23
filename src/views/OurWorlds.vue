@@ -86,6 +86,9 @@
     .our-worlds-cards {
       color: #fff;
       padding: 35vh 1rem 15vh 1rem;
+      @media screen and (min-width: 500.1px) and (max-width: 1000px) {
+        padding: 20vh 1rem 10vh 1rem;
+      }
 
       display: grid;
       grid-template-columns: repeat(4, 1fr);

@@ -4,7 +4,7 @@
     <navbar />
     <video class="main-bg" autoplay muted loop>
       <source
-        src="https://assets.mixkit.co/videos/preview/mixkit-top-aerial-shot-of-seashore-with-rocks-1090-large.mp4"
+        :src="mainVideo"
         type="video/mp4"
       />
     </video>
@@ -20,6 +20,11 @@
     components: {
       Navbar,
     },
+    data() {
+      return {
+        mainVideo: require("@/assets/home/main.mp4")
+      }
+    }
   });
 </script>
 
