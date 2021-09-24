@@ -19,7 +19,7 @@
 
 <script lang="ts">
   import Navbar from "@/components/Navbar.vue";
-  import GalleryCard from "@/components/GalleryCard.vue";
+  import GalleryCard from "@/components/GalleryCard/GalleryCard.vue";
 
   import { defineComponent } from "vue";
   export default defineComponent({
