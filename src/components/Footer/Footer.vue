@@ -61,7 +61,7 @@
   </footer>
 </template>
 
-<script type="module" src="./Footer.js"></script>
+<script type="module" src="./Footer.ts"></script>
 
 <style scoped lang="scss">
   @import "./Footer";

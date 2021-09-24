@@ -18,7 +18,7 @@
 </template>
 
 <script lang="ts">
-  import Navbar from "@/components/Navbar.vue";
+  import Navbar from "@/components/Navbar/Navbar.vue";
   import GalleryCard from "@/components/GalleryCard/GalleryCard.vue";
 
   import { defineComponent } from "vue";

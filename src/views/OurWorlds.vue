@@ -15,8 +15,8 @@
 </template>
 
 <script lang="ts">
-  import Navbar from "@/components/Navbar.vue";
-  import OurWorldsCard from "@/components/OurWorldsCard.vue";
+  import Navbar from "@/components/Navbar/Navbar.vue";
+  import OurWorldsCard from "@/components/OurWorldsCard/OurWorldsCard.vue";
 
   import { defineComponent } from "vue";
   export default defineComponent({

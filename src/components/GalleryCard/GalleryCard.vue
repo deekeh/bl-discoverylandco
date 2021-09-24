@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script type="module" src="./GalleryCard.js"></script>
+<script type="module" src="./GalleryCard.ts"></script>
 
 <style scoped lang="scss">
   @import "./GalleryCard";
