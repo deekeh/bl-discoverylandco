@@ -1,0 +1,10 @@
+.home {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+
+  video.main-bg {
+    min-width: 100%;
+    min-height: 100vh;
+  }
+}
