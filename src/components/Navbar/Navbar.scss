@@ -10,7 +10,7 @@ nav.header {
   padding: 3rem 6rem;
   @media screen and (max-width: 900px) {
     & {
-      padding: 1rem 2rem;
+      padding: 1rem;
     }
   }
 
@@ -22,6 +22,36 @@ nav.header {
     flex-direction: column;
   }
 
+  // logo with toggle button on small screens
+  .logo-outer {
+    .nav-toggler {
+      display: none;
+
+      background: inherit;
+      border: none;
+      outline: none;
+    }
+    @media screen and (max-width: 500px) {
+      &.is-toggled {
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 2rem;
+      }
+      align-self: flex-start;
+      padding: 1rem;
+      width: 100%;
+      z-index: 1;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .nav-toggler {
+        display: inline;
+      }
+    }
+  }
+
   .nav-options {
     display: flex;
     align-items: center;
@@ -31,7 +61,30 @@ nav.header {
       column-gap: 1rem;
     }
     @media screen and (max-width: 500px) {
+      background: hsl(0, 0%, 7%);
       flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: top 1s;
+
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      padding: 1rem;
+      &.is-toggled {
+        top: 0;
+      }
+      &:not(.is-toggled) {
+        // position: fixed;
+        top: -100vh;
+      }
+
+      a {
+        font-family: "Average", serif;
+        font-size: 2.5rem;
+      }
     }
 
     .nav-option {
@@ -49,5 +102,8 @@ nav.header {
 
   .logo {
     width: 14rem;
+    @media screen and (max-width: 500px) {
+      width: 10rem;
+    }
   }
 }
