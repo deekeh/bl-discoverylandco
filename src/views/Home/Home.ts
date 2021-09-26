@@ -1,10 +1,15 @@
-import Navbar from "@/components/Navbar/Navbar.vue";
+// import Navbar from "@/components/Navbar/Navbar.vue";
+import VideoBanner from "@/components/VideoBanner/VideoBanner.vue";
+import HomeExplore from "@/components/HomeExplore/HomeExplore.vue";
+
 import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "Home",
   components: {
-    Navbar,
+    // Navbar,
+    VideoBanner,
+    HomeExplore,
   },
   data() {
     return {

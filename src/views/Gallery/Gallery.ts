@@ -1,11 +1,9 @@
-import Navbar from "@/components/Navbar/Navbar.vue";
 import GalleryCard from "@/components/GalleryCard/GalleryCard.vue";
 
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "Gallery",
   components: {
-    Navbar,
     GalleryCard,
   },
   data() {

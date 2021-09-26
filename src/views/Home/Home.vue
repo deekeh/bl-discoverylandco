@@ -1,16 +1,7 @@
 <template>
   <div class="home">
     <!-- main section -->
-    <section class="main">
-      <navbar />
-      <video class="main-bg" autoplay muted loop>
-        <source :src="mainVideo" type="video/mp4" />
-      </video>
-      <main class="discover-your-world">
-        <span class="discover">Discover</span>
-        <span class="your-world">your world</span>
-      </main>
-    </section>
+    <video-banner />
 
     <!-- welcome section -->
     <section id="welcome">
@@ -39,6 +30,8 @@
         <img :src="require('@/assets/home/welcome/1.jpg')" alt="Leisure" />
       </div>
     </section>
+
+    <home-explore />
   </div>
 </template>
 

@@ -1,7 +1,5 @@
 <template>
   <section class="main">
-    <navbar />
-
     <div class="our-worlds-cards">
       <our-worlds-card
         v-for="(image, idx) in images"

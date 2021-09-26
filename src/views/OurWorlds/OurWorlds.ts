@@ -1,11 +1,9 @@
-import Navbar from "@/components/Navbar/Navbar.vue";
 import OurWorldsCard from "@/components/OurWorldsCard/OurWorldsCard.vue";
 
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "DefineComponent",
   components: {
-    Navbar,
     OurWorldsCard,
   },
   data() {

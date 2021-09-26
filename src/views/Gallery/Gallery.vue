@@ -1,6 +1,5 @@
 <template>
   <section class="main">
-    <navbar />
     <div class="gallery">
       <div class="first-image">
         Gallery
