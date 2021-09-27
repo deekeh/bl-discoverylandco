@@ -1,15 +1,21 @@
 .carousel-card {
   // border: solid 1px #f00;
   position: relative;
-  background: url("https://dxaurk9yhilm4.cloudfront.net/images/6796/IMG_0911_397186feb8bd51bb37bc24fc2b9b500f.jpeg"),
-    #333;
+  // background: url("https://dxaurk9yhilm4.cloudfront.net/images/6796/IMG_0911_397186feb8bd51bb37bc24fc2b9b500f.jpeg"),
+  //   #333;
+  // background-size: cover;
+  // background-repeat: no-repeat;
   height: calc(min(600px, 80vh));
   margin-right: 2rem;
   padding: 4rem;
   width: calc((100% - 4rem) / 3);
   @media screen and (max-width: 500px) {
     width: calc(100%);
-    
+    padding: 1rem;
+  }
+  @media screen and (min-width: 500.1px) and (max-width: 1000px) {
+    width: calc((100% - 2rem) / 2);
+    padding: 1.5rem;
   }
 
   display: inline-flex;

@@ -19,6 +19,9 @@
       gap: 1rem;
       padding: 0 2rem;
     }
+    @media screen and (min-width: 500.1px) and (max-width: 1000px) {
+      padding: 0 4rem;
+    }
     .header {
       display: flex;
       flex-direction: column;
@@ -114,6 +117,9 @@
       @media screen and (max-width: 500px) {
         animation: carouselscrollermobile 12s linear infinite;
       }
+      @media screen and (min-width: 500.1px) and (max-width: 1000px) {
+        animation: carouselscrollertablet 10s linear infinite;
+      }
 
       @keyframes carouselscroller {
         from {
@@ -129,6 +135,14 @@
         }
         to {
           transform: translateX(calc(0px - (((2rem + 100%)) * 5)));
+        }
+      }
+      @keyframes carouselscrollertablet {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(calc(0px - (((2rem + 100%) / 2) * 5)));
         }
       }
     }
