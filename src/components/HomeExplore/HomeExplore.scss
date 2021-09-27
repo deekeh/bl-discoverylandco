@@ -1,7 +1,136 @@
 #explore {
-  .header {
-    .explore {
-      @include font-sans-serif;
+  padding-bottom: 4rem;
+  // @media screen and (max-width: 500px) {
+  //   padding: 0 2rem 4rem 2rem;
+  // }
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  .main {
+    padding: 0 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 0 2rem;
+    }
+    .header {
+      display: flex;
+      flex-direction: column;
+      span {
+        font-size: 3rem;
+        font-weight: 100;
+        color: #333;
+        @media screen and (max-width: 500px) {
+          font-size: 1.5rem;
+        }
+      }
+      .explore {
+        @include font-sans-serif;
+      }
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 2rem;
+      @media screen and (max-width: 500px) {
+        gap: 1rem;
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        @media screen and (max-width: 500px) {
+          width: 50px;
+          height: 50px;
+        }
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 1000px;
+        box-shadow: 0 0.5rem 1rem #ddd;
+        animation: carouselbtnhoverback 400ms;
+        svg {
+          @media screen and (max-width: 500px) {
+            height: 24px;
+            width: 24px;
+          }
+        }
+
+        &:hover {
+          cursor: pointer;
+          background: #000;
+          animation: carouselbtnhover 400ms;
+          svg {
+            fill: #fff;
+          }
+
+          @keyframes carouselbtnhover {
+            from {
+              background: #fff;
+              // svg {
+              //   fill: #000;
+              // }
+            }
+            to {
+              background: #000;
+              // svg {
+              //   fill: #fff;
+              // }
+            }
+          }
+          @keyframes carouselbtnhoverback {
+            from {
+              background: #000;
+              svg {
+                fill: #fff;
+              }
+            }
+            to {
+              background: #fff;
+              svg {
+                fill: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .carousel {
+    overflow-x: hidden;
+    .carousel-inner {
+      overflow-x: visible;
+      white-space: nowrap;
+      animation: carouselscroller 18s linear infinite;
+      @media screen and (max-width: 500px) {
+        animation: carouselscrollermobile 12s linear infinite;
+      }
+
+      @keyframes carouselscroller {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(calc(0px - (((2rem + 100%) / 3) * 5)));
+        }
+      }
+      @keyframes carouselscrollermobile {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(calc(0px - (((2rem + 100%)) * 5)));
+        }
+      }
     }
   }
 }

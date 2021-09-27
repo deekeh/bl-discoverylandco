@@ -1,0 +1,44 @@
+.carousel-card {
+  // border: solid 1px #f00;
+  position: relative;
+  background: url("https://dxaurk9yhilm4.cloudfront.net/images/6796/IMG_0911_397186feb8bd51bb37bc24fc2b9b500f.jpeg"),
+    #333;
+  height: calc(min(600px, 80vh));
+  margin-right: 2rem;
+  padding: 4rem;
+  width: calc((100% - 4rem) / 3);
+  @media screen and (max-width: 500px) {
+    width: calc(100%);
+    
+  }
+
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+
+  &:last-child {
+    margin-right: 4rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 20%, 0.4);
+  }
+
+  div {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+
+  div.title {
+    font-size: 2rem;
+    @include font-sans-serif;
+  }
+}
