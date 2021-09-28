@@ -2,12 +2,12 @@
 
 #home-lands {
   background: #f3f3f3;
-  padding: 2rem 0;
+  padding-top: 2rem;
   position: relative;
 
   .header {
     padding: 0 8rem;
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 1000px) {
       padding: 0 2rem;
     }
 
@@ -21,7 +21,7 @@
         font-weight: normal;
         line-height: 3.5rem;
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 1000px) {
           font-size: 2.5rem;
           line-height: 2.5rem;
         }
@@ -36,7 +36,7 @@
       p {
         color: #777;
         line-height: 2rem;
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 1000px) {
           display: inline;
           line-height: 1.5rem;
           font-size: 0.9rem;
@@ -48,7 +48,7 @@
       display: flex;
       margin-bottom: 4rem;
       gap: 4rem;
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 1000px) {
         gap: 2rem;
       }
 
@@ -58,7 +58,7 @@
         border: none;
         outline: none;
         @include customhroverride;
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 1000px) {
           font-size: 0.8rem;
         }
       }
@@ -83,10 +83,20 @@
       color: #fff;
       width: 50%;
       padding: 3.5rem;
+      @media screen and (max-width: 1000px) {
+        padding: 2rem;
+      }
 
       display: flex;
       flex-direction: column;
       gap: 4rem;
+
+      @media screen and (max-width: 1000px) {
+        position: relative;
+        width: 100%;
+        top: -0.25rem;
+        gap: 2rem;
+      }
 
       .text-grey {
         color: hsla(0, 0%, 100%, 0.5);
@@ -107,6 +117,10 @@
       .weather {
         display: flex;
         gap: 2rem;
+        @media screen and (max-width: 1000px) {
+          gap: 0.5rem;
+          margin: 2rem 0;
+        }
 
         .temperature,
         .winds,
@@ -126,10 +140,19 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        
+
+        @media screen and (max-width: 1000px) {
+          gap: 0.5rem;
+        }
+
         .subtitle {
           font-size: 3rem;
           @include font-sans-serif;
+          z-index: 2;
+
+          @media screen and (max-width: 1000px) {
+            font-size: 2.5rem;
+          }
         }
       }
 
@@ -137,6 +160,13 @@
         display: flex;
         gap: 1rem;
         align-items: center;
+
+        @media screen and (max-width: 1000px) {
+          gap: 0.5rem;
+          .coordinate {
+            font-size: 0.8rem;
+          }
+        }
       }
 
       .image {
@@ -144,10 +174,21 @@
         position: absolute;
         top: -4rem;
         right: 2.5rem;
-        background: url("https://dxaurk9yhilm4.cloudfront.net/images/775/driftwood3-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg");
+        // background: url("https://dxaurk9yhilm4.cloudfront.net/images/775/driftwood3-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         width: 270px;
+
+        @media screen and (max-width: 1000px) {
+          top: -2rem;
+          right: 0;
+          height: 60%;
+          width: 45%;
+        }
+        @media screen and (min-width: 500.1px) and (max-width: 1000px) {
+          top: -4rem;
+          height: 100%;
+        }
       }
     }
   }
