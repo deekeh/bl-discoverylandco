@@ -1,6 +1,7 @@
 // import Navbar from "@/components/Navbar/Navbar.vue";
 import VideoBanner from "@/components/VideoBanner/VideoBanner.vue";
 import HomeExplore from "@/components/HomeExplore/HomeExplore.vue";
+import HomeLands from "@/components/HomeLands/HomeLands.vue";
 
 import { defineComponent } from "vue";
 
@@ -10,6 +11,7 @@ export default defineComponent({
     // Navbar,
     VideoBanner,
     HomeExplore,
+    HomeLands,
   },
   data() {
     return {

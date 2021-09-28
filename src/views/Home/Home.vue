@@ -32,6 +32,8 @@
     </section>
 
     <home-explore />
+
+    <home-lands />
   </div>
 </template>
 

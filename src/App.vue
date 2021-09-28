@@ -59,6 +59,9 @@
       background: #fff;
       animation: customhrremove 0.3s ease-out;
     }
+    &.black::after {
+      background: #333;
+    }
     &:hover::after {
       margin-left: 0;
       margin-right: auto;

@@ -1,0 +1,70 @@
+#home-lands {
+  background: #f3f3f3;
+  padding: 2rem 0;
+
+  .header {
+    padding: 0 8rem;
+    @media screen and (max-width: 500px) {
+      padding: 0 2rem;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 4rem;
+      span {
+        color: #333;
+        font-size: 3.5rem;
+        font-weight: normal;
+        line-height: 3.5rem;
+        
+        @media screen and (max-width: 500px) {
+          font-size: 2.5rem;
+          line-height: 2.5rem;
+        }
+      }
+      .lands-of {
+        @include font-sans-serif;
+      }
+    }
+
+    .subtitle {
+      margin-bottom: 4rem;
+      p {
+        color: #777;
+        line-height: 2rem;
+        @media screen and (max-width: 500px) {
+          display: inline;
+          line-height: 1.5rem;
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .globe-nav {
+      display: flex;
+      margin-bottom: 4rem;
+      gap: 4rem;
+      @media screen and (max-width: 500px) {
+        gap: 2rem;
+      }
+      
+      .globe-nav-item {
+        cursor: pointer;
+        background: inherit;
+        border: none;
+        outline: none;
+        @media screen and (max-width: 500px) {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .globe-image {
+    width: 60%;
+    @media screen and (max-width: 500px) {
+      width: 95%;
+    }
+  }
+}
