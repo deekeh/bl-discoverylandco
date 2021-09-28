@@ -49,6 +49,13 @@
     flex-direction: column;
     gap: 4px;
 
+    // overwrite custom hr when the page is active
+    &.router-link-active::after,
+    &.router-link-active:hover::after {
+      width: 100%;
+      height: 2px;
+    }
+
     &::after {
       display: inline-block;
       margin-left: auto;

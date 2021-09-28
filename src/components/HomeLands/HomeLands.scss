@@ -1,6 +1,7 @@
 #home-lands {
   background: #f3f3f3;
   padding: 2rem 0;
+  position: relative;
 
   .header {
     padding: 0 8rem;
@@ -17,7 +18,7 @@
         font-size: 3.5rem;
         font-weight: normal;
         line-height: 3.5rem;
-        
+
         @media screen and (max-width: 500px) {
           font-size: 2.5rem;
           line-height: 2.5rem;
@@ -48,7 +49,7 @@
       @media screen and (max-width: 500px) {
         gap: 2rem;
       }
-      
+
       .globe-nav-item {
         cursor: pointer;
         background: inherit;
@@ -61,10 +62,90 @@
     }
   }
 
-  .globe-image {
-    width: 60%;
-    @media screen and (max-width: 500px) {
-      width: 95%;
+  .map {
+    position: relative;
+    .globe-image {
+      width: 60%;
+      @media screen and (max-width: 500px) {
+        width: 95%;
+      }
+    }
+
+    aside.location-data {
+      position: absolute;
+      right: 0;
+      top: 4rem;
+
+      background: #161f1e;
+      color: #fff;
+      width: 50%;
+      padding: 3.5rem;
+
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+
+      .text-grey {
+        color: hsla(0, 0%, 100%, 0.5);
+      }
+
+      .nav {
+        display: flex;
+        gap: 1rem;
+
+        button {
+          cursor: pointer;
+          background: inherit;
+          border: none;
+          outline: none;
+        }
+      }
+
+      .weather {
+        display: flex;
+        gap: 2rem;
+
+        .temperature,
+        .winds,
+        .compass {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.5rem;
+
+          .value {
+            font-size: 0.8rem;
+          }
+        }
+      }
+
+      .location {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        
+        .subtitle {
+          font-size: 3rem;
+          @include font-sans-serif;
+        }
+      }
+
+      .coordinates {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .image {
+        height: 100%;
+        position: absolute;
+        top: -4rem;
+        right: 2.5rem;
+        background: url("https://dxaurk9yhilm4.cloudfront.net/images/775/driftwood3-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 270px;
+      }
     }
   }
 }

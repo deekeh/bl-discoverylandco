@@ -91,12 +91,12 @@ nav.header {
       text-decoration: none;
       color: #fff;
 
-      // overwrite custom hr when the page is active
-      &.router-link-active::after,
-      &.router-link-active:hover::after {
-        width: 100%;
-        height: 2px;
-      }
+      // // overwrite custom hr when the page is active
+      // &.router-link-active::after,
+      // &.router-link-active:hover::after {
+      //   width: 100%;
+      //   height: 2px;
+      // }
     }
   }
 
