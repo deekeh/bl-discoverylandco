@@ -21,6 +21,8 @@
 </script>
 
 <style lang="scss">
+  @import "./global/style";
+
   @import url("https://fonts.googleapis.com/css2?family=Average+Sans&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Average&display=swap");
 
@@ -50,11 +52,11 @@
     gap: 4px;
 
     // overwrite custom hr when the page is active
-    &.router-link-active::after,
-    &.router-link-active:hover::after {
-      width: 100%;
-      height: 2px;
-    }
+    // &.router-link-active::after,
+    // &.router-link-active:hover::after {
+    //   width: 100%;
+    //   height: 2px;
+    // }
 
     &::after {
       display: inline-block;

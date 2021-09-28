@@ -4,3 +4,12 @@
 @mixin font-serif {
   font-family: "Average Sans", sans-serif;
 }
+
+@mixin customhroverride {
+  // overwrite custom hr when the page is active
+    &.router-link-active::after,
+    &.router-link-active:hover::after {
+      width: 100%;
+      height: 2px;
+    }
+}

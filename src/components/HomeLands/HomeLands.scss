@@ -1,3 +1,5 @@
+@import "../../global/style";
+
 #home-lands {
   background: #f3f3f3;
   padding: 2rem 0;
@@ -55,6 +57,7 @@
         background: inherit;
         border: none;
         outline: none;
+        @include customhroverride;
         @media screen and (max-width: 500px) {
           font-size: 0.8rem;
         }
