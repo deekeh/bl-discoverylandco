@@ -1,7 +1,10 @@
 <template>
   <div class="home">
     <!-- main section -->
-    <video-banner />
+    <video-banner
+      :video="require('@/assets/home/main.mp4')"
+      :image="require('@/assets/about-dlc/banner.jpg')"
+    />
 
     <!-- welcome section -->
     <section id="welcome">

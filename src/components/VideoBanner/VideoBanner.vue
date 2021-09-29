@@ -1,7 +1,9 @@
 <template>
   <section class="main">
-    <video class="main-bg" autoplay muted loop>
-      <source :src="mainVideo" type="video/mp4" />
+    <video class="main-bg" autoplay muted loop :style="{
+      '--fallback': `url('${image}')`
+    }">
+      <source :src="video" type="video/mp4" />
     </video>
     <main class="discover-your-world">
       <span class="discover">Discover</span>
