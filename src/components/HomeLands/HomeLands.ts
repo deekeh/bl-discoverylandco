@@ -33,8 +33,7 @@ export default defineComponent({
               locationTitle: "Austin, Texas",
               locationSubtitle: "Driftwood",
               coordinate: "30.139339&deg; N / -98.022342&deg; W",
-              image:
-                "https://dxaurk9yhilm4.cloudfront.net/images/775/driftwood3-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg",
+              image: require("@/assets/home-lands/america-0.jpg"),
             },
             {
               temperature: "57&deg; F",
@@ -43,8 +42,7 @@ export default defineComponent({
               locationTitle: "Nashville, Tennessee",
               locationSubtitle: "Troubadour",
               coordinate: "35.828904&deg; N / -86.679158&deg; W",
-              image:
-                "https://dxaurk9yhilm4.cloudfront.net/images/774/Troubadour-Map_190718_114642_397186feb8bd51bb37bc24fc2b9b500f.jpg",
+              image: require("@/assets/home-lands/america-1.jpg"),
             },
             {
               temperature: "83&deg; F",
@@ -53,8 +51,7 @@ export default defineComponent({
               locationTitle: "Rio San Juan, Dominican Republic",
               locationSubtitle: "Playa Grande",
               coordinate: "19.3830&deg; N / 70.0407&deg; W",
-              image:
-                "https://dxaurk9yhilm4.cloudfront.net/images/217/Playa-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg",
+              image: require("@/assets/home-lands/america-2.jpg"),
             },
             {
               temperature: "46&deg; F",
@@ -63,8 +60,7 @@ export default defineComponent({
               locationTitle: "Coeur d’Alene, Idaho",
               locationSubtitle: "Gozzer Ranch",
               coordinate: "47.617997&deg; N / -116.766169&deg; W",
-              image:
-                "https://dxaurk9yhilm4.cloudfront.net/images/769/gozzer-Map2_397186feb8bd51bb37bc24fc2b9b500f.jpg",
+              image: require("@/assets/home-lands/america-3.jpg"),
             },
           ],
         },
@@ -79,8 +75,7 @@ export default defineComponent({
               locationTitle: "Maui, Hawaii",
               locationSubtitle: "Mākena",
               coordinate: "20.690308&deg; N / -156.440582&deg; W",
-              image:
-                "https://dxaurk9yhilm4.cloudfront.net/images/394/Makena3-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg",
+              image: require("@/assets/home-lands/hawaii-0.jpg"),
             },
             {
               temperature: "75&deg; F",
@@ -89,8 +84,7 @@ export default defineComponent({
               locationTitle: "Kohala, Hawaii",
               locationSubtitle: "Kūki'o",
               coordinate: "19.817312&deg; N / -155.998547&deg; W",
-              image:
-                "https://dxaurk9yhilm4.cloudfront.net/images/774/Troubadour-Map_190718_114642_397186feb8bd51bb37bc24fc2b9b500f.jpg",
+              image: require("@/assets/home-lands/hawaii-1.jpg"),
             },
             {
               temperature: "20&deg; F",
@@ -99,8 +93,7 @@ export default defineComponent({
               locationTitle: "Comporta, Portugal",
               locationSubtitle: "CostaTerra",
               coordinate: "38.198750&deg; N / -8.764298&deg; W",
-              image:
-                "https://dxaurk9yhilm4.cloudfront.net/images/6891/iStock-547510418_200514_172314_397186feb8bd51bb37bc24fc2b9b500f.jpg",
+              image: require("@/assets/home-lands/hawaii-2.jpg"),
             },
           ],
         },
@@ -115,8 +108,7 @@ export default defineComponent({
               locationTitle: "Austin, Texas",
               locationSubtitle: "Driftwood",
               coordinate: "30.139339&deg; N / -98.022342&deg; W",
-              image:
-                "https://dxaurk9yhilm4.cloudfront.net/images/775/driftwood3-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg",
+              image: require("@/assets/home-lands/america-0.jpg"),
             },
             {
               temperature: "571&deg; F",
@@ -125,8 +117,7 @@ export default defineComponent({
               locationTitle: "Nashville, Tennessee",
               locationSubtitle: "Troubadour",
               coordinate: "35.828904&deg; N / -86.679158&deg; W",
-              image:
-                "https://dxaurk9yhilm4.cloudfront.net/images/774/Troubadour-Map_190718_114642_397186feb8bd51bb37bc24fc2b9b500f.jpg",
+              image: require("@/assets/home-lands/america-1.jpg"),
             },
             {
               temperature: "831&deg; F",
@@ -135,8 +126,7 @@ export default defineComponent({
               locationTitle: "Rio San Juan, Dominican Republic",
               locationSubtitle: "Playa Grande",
               coordinate: "19.3830&deg; N / 70.0407&deg; W",
-              image:
-                "https://dxaurk9yhilm4.cloudfront.net/images/217/Playa-Map_397186feb8bd51bb37bc24fc2b9b500f.jpg",
+              image: require("@/assets/home-lands/america-0.jpg"),
             },
           ],
         },
