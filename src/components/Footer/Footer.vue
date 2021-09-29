@@ -17,7 +17,7 @@
           </address>
         </div>
         <div class="about table">
-          <router-link class="animated-hr" :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'About-Dlc' }">
             About DLC
           </router-link>
           <router-link class="animated-hr" :to="{ name: 'Our-Worlds' }">

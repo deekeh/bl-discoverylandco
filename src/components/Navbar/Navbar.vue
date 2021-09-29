@@ -13,7 +13,7 @@
       </button>
     </div>
     <div class="nav-options" :class="[isToggled ? 'is-toggled' : '']">
-      <router-link @click="isToggled=false" :to="{ name: 'Home' }" class="nav-option animated-hr"
+      <router-link @click="isToggled=false" :to="{ name: 'About-Dlc' }" class="nav-option animated-hr"
         >About DLC</router-link
       >
       <router-link @click="isToggled=false" :to="{ name: 'Our-Worlds' }" class="nav-option animated-hr"

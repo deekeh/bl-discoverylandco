@@ -6,8 +6,8 @@
       <source :src="video" type="video/mp4" />
     </video>
     <main class="discover-your-world">
-      <span class="discover">Discover</span>
-      <span class="your-world">your world</span>
+      <span class="discover" v-html="heading"></span>
+      <span class="your-world" v-html="subheading"></span>
     </main>
   </section>
 </template>

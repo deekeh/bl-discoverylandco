@@ -4,6 +4,8 @@
     <video-banner
       :video="require('@/assets/home/main.mp4')"
       :image="require('@/assets/about-dlc/banner.jpg')"
+      heading="Discover"
+      subheading="your world"
     />
 
     <!-- welcome section -->

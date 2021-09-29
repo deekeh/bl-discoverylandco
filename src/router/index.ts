@@ -8,6 +8,12 @@ const routes: Array<RouteRecordRaw> = [
     component: Home,
   },
   {
+    path: "/about-dlc",
+    name: "About-Dlc",
+    component: () =>
+      import(/* webpackChunkName: "about-dlc" */ "../views/AboutDlc/AboutDlc.vue"),
+  },
+  {
     path: "/gallery",
     name: "Gallery",
     component: () =>

@@ -10,6 +10,12 @@ export default defineComponent({
       type: String,
       default: require("@/assets/about-dlc/banner.jpg"),
     },
+    heading: {
+      type: String,
+    },
+    subheading: {
+      type: String,
+    },
   },
   // data() {
   //   return {
