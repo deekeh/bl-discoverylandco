@@ -34,6 +34,8 @@
     <home-explore />
 
     <home-lands />
+
+    <home-bottom />
   </div>
 </template>
 

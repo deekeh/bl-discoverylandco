@@ -1,0 +1,53 @@
+.bottom-card {
+  background-image: var(--bg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .text {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+
+    .heading {
+      font-size: 3rem;
+      font-weight: normal;
+    }
+
+    button.next {
+      background: inherit;
+      border: solid 1px #fff;
+      outline: none;
+      border-radius: 1000px;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    z-index: 0;
+  }
+}
