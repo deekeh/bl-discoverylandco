@@ -2,6 +2,7 @@ import VideoBanner from "@/components/VideoBanner/VideoBanner.vue";
 import TextImage from "@/components/TextImage/TextImage.vue";
 import HomeExplore from "@/components/HomeExplore/HomeExplore.vue";
 import HomeWelcome from "@/components/HomeWelcome/HomeWelcome.vue";
+import ExploreFooter from "@/components/ExploreFooter/ExploreFooter.vue";
 
 import { defineComponent } from "vue";
 
@@ -12,6 +13,7 @@ export default defineComponent({
     TextImage,
     HomeExplore,
     HomeWelcome,
+    ExploreFooter,
   },
   data() {
     return {

@@ -73,6 +73,11 @@
       :isleftimghidden="true"
     />
 
+    <explore-footer
+      :style="{
+        '--bg': `url('https://dxaurk9yhilm4.cloudfront.net/images/160/What_we_do_footer_2_5dabbd1a34149dcaed83515ff1526a0f.jpg')`,
+      }"
+    />
   </section>
 </template>
 
