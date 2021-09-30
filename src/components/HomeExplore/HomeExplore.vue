@@ -2,8 +2,8 @@
   <section id="explore">
     <div class="main">
       <h1 class="header">
-        <span class="explore">Explore</span>
-        <span class="our-worlds">our worlds</span>
+        <span class="explore" v-html="heading"></span>
+        <span class="our-worlds" v-html="subheading"></span>
       </h1>
       <div class="nav-buttons">
         <button>

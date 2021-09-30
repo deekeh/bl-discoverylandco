@@ -1,3 +1,7 @@
+body {
+  background-color: #fff !important;
+}
+
 #about-dlc {
   background: #fff;
 
@@ -11,7 +15,7 @@
       font-size: 2.5rem;
       text-align: center;
       @include font-sans-serif;
-      
+
       @media screen and (max-width: 500px) {
         text-align: left;
         font-size: 1.5rem;
@@ -20,11 +24,28 @@
     }
   }
 
-  .blue-image {
-    width: 100%;
-    padding: 0 4rem;
+  .blue-image-outer {
+    margin-bottom: 4rem;
+    .blue-image {
+      width: 100%;
+      padding: 0 4rem;
+      @media screen and (max-width: 500px) {
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  .carousel {
     @media screen and (max-width: 500px) {
-      padding: 0 1rem;
+      position: relative;
+      top: -1px;
+    }
+  }
+
+  .full-image-outer {
+    padding-bottom: 4rem;
+    img.full-image {
+      width: 100%;
     }
   }
 }

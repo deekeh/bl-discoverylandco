@@ -38,7 +38,7 @@
   body,
   html {
     min-height: 100vh;
-    background: #161F1E;
+    background: #fff;
   }
   body {
     position: relative;
