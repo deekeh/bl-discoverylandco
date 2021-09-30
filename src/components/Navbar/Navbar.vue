@@ -19,7 +19,7 @@
       <router-link @click="isToggled=false" :to="{ name: 'Our-Worlds' }" class="nav-option animated-hr"
         >Our Worlds</router-link
       >
-      <router-link @click="isToggled=false" :to="{ name: 'Home' }" class="nav-option animated-hr"
+      <router-link @click="isToggled=false" :to="{ name: 'Experiences' }" class="nav-option animated-hr"
         >Experiences</router-link
       >
       <router-link @click="isToggled=false" :to="{ name: 'Gallery' }" class="nav-option animated-hr"
