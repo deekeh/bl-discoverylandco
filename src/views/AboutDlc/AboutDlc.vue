@@ -6,20 +6,7 @@
       subheading="perfect world"
     />
 
-    <section class="founded">
-      <p>
-        Founded in 1994 by Mike Meldman, Discovery Land Company is
-      </p>
-      <p>
-        a US-based real estate developer and operator of private residential
-      </p>
-      <p>
-        club communities and resorts with a world-renowned portfolio of
-      </p>
-      <p>
-        domestic and international properties.
-      </p>
-    </section>
+    <page-head :paragraphs="pageHeadData" />
 
     <text-image
       :heading="textImage.heading"

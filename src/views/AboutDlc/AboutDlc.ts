@@ -1,4 +1,5 @@
 import VideoBanner from "@/components/VideoBanner/VideoBanner.vue";
+import PageHead from "@/components/PageHead/PageHead.vue";
 import TextImage from "@/components/TextImage/TextImage.vue";
 import HomeExplore from "@/components/HomeExplore/HomeExplore.vue";
 import HomeWelcome from "@/components/HomeWelcome/HomeWelcome.vue";
@@ -10,6 +11,7 @@ export default defineComponent({
   name: "AboutDlc",
   components: {
     VideoBanner,
+    PageHead,
     TextImage,
     HomeExplore,
     HomeWelcome,
@@ -57,6 +59,12 @@ export default defineComponent({
           title: "Yellow Stone Club",
           subtitle: "Big Sky, Montana",
         },
+      ],
+      pageHeadData: [
+        "Founded in 1994 by Mike Meldman, Discovery Land Company is",
+        "a US-based real estate developer and operator of private residential",
+        "club communities and resorts with a world-renowned portfolio of",
+        "domestic and international properties.",
       ],
     };
   },
