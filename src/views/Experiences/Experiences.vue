@@ -18,6 +18,12 @@
       :image="require('@/assets/experiences/text-image.jpg')"
     />
 
+    <!-- experience layers -->
+    <section class="experience-layers">
+      <experience-layer v-for="(layer, idx) in layerData" :key="idx" :image="layer.image" :heading="layer.heading" :content="layer.content" :isinversed="idx%2!==0" />
+      <!-- <experience-layer :isinversed="true" /> -->
+    </section>
+
     <!-- explore footer section -->
     <explore-footer
       :style="{
