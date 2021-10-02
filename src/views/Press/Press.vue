@@ -5,6 +5,9 @@
       heading="News"
       subheading="and Press"
     />
+
+    <!-- latest news -->
+    <press-latest />
   </main>
 </template>
 
