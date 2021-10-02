@@ -11,7 +11,9 @@ const routes: Array<RouteRecordRaw> = [
     path: "/about-dlc",
     name: "About-Dlc",
     component: () =>
-      import(/* webpackChunkName: "about-dlc" */ "../views/AboutDlc/AboutDlc.vue"),
+      import(
+        /* webpackChunkName: "about-dlc" */ "../views/AboutDlc/AboutDlc.vue"
+      ),
   },
   {
     path: "/gallery",
@@ -23,13 +25,23 @@ const routes: Array<RouteRecordRaw> = [
     path: "/our-worlds",
     name: "Our-Worlds",
     component: () =>
-      import(/* webpackChunkName: "our-worlds" */ "../views/OurWorlds/OurWorlds.vue"),
+      import(
+        /* webpackChunkName: "our-worlds" */ "../views/OurWorlds/OurWorlds.vue"
+      ),
   },
   {
     path: "/experiences",
     name: "Experiences",
     component: () =>
-      import(/* webpackChunkName: "our-worlds" */ "../views/Experiences/Experiences.vue"),
+      import(
+        /* webpackChunkName: "experiences" */ "../views/Experiences/Experiences.vue"
+      ),
+  },
+  {
+    path: "/press",
+    name: "Press",
+    component: () =>
+      import(/* webpackChunkName: "press" */ "../views/Press/Press.vue"),
   },
 ];
 
