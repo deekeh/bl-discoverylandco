@@ -5,10 +5,10 @@
     </h1>
 
     <div class="press-news-cards">
-      press news cards
+      <press-news-card v-for="(data, idx) in desktopNewsData" :key="idx" :title="data.title" :subtitle="data.subtitle" />
     </div>
     <div class="press-news-cards-mobile">
-      press news cards mobile
+      <press-news-card v-for="(data, idx) in newsData" :key="idx" :title="data.title" :subtitle="data.subtitle" />
     </div>
 
     <div class="press-news-pages">

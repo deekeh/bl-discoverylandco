@@ -7,6 +7,7 @@ interface INewsDataItem {
 // internal components
 import ArrowLeft from "@/components/svg/ArrowLeft.vue";
 import ArrowRight from "@/components/svg/ArrowRight.vue";
+import PressNewsCard from "../PressNewsCard/PressNewsCard.vue";
 
 import { defineComponent } from "@vue/runtime-core";
 
@@ -15,6 +16,7 @@ export default defineComponent({
   components: {
     ArrowLeft,
     ArrowRight,
+    PressNewsCard,
   },
   data() {
     return {
@@ -70,27 +72,27 @@ export default defineComponent({
           subtitle: "New York Times | March 22, 2021",
         },
       ] as INewsDataItem[],
-      desktopNewsData: [] as INewsDataItem[],
+      // desktopNewsData: [] as INewsDataItem[],
     };
   },
   computed: {
     totalPages(): number {
       return this.newsData.length % 4;
     },
-    // desktopNewsData(): Array<{ title: string; subtitle: string }> {
-    //   console.log(this.newsData.slice(this.page, 4));
-    //   return this.newsData.slice(this.page, 4);
-    // },
-  },
-  watch: {
-    page(): void {
-      this.desktopNewsData = this.newsData.slice(
-        this.page * 4,
-        (this.page + 1) * 4
-      );
-      // console.log(this.desktopNewsData);
+    desktopNewsData(): Array<{ title: string; subtitle: string }> {
+      console.log(this.newsData.slice(this.page * 4, (this.page + 1) * 4));
+      return this.newsData.slice(this.page * 4, (this.page + 1) * 4);
     },
   },
+  // watch: {
+  //   page(): void {
+  //     this.desktopNewsData = this.newsData.slice(
+  //       this.page * 4,
+  //       (this.page + 1) * 4
+  //     );
+  //     // console.log(this.desktopNewsData);
+  //   },
+  // },
   methods: {
     nextPage(): void {
       this.page = (this.page + 1) % this.totalPages;
