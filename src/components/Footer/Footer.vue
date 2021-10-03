@@ -23,13 +23,13 @@
           <router-link class="animated-hr" :to="{ name: 'Our-Worlds' }">
             Our Worlds
           </router-link>
-          <router-link class="animated-hr" :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'Experiences' }">
             Experiences
           </router-link>
           <router-link class="animated-hr" :to="{ name: 'Gallery' }">
             Gallery
           </router-link>
-          <router-link class="animated-hr" :to="{ name: 'Home' }">
+          <router-link class="animated-hr" :to="{ name: 'Press' }">
             Press
           </router-link>
         </div>
