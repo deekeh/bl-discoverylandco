@@ -8,6 +8,9 @@
 
     <!-- latest news -->
     <press-latest />
+
+    <!-- press news -->
+    <press-news />
   </main>
 </template>
 
