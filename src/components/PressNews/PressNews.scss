@@ -61,12 +61,11 @@ section.press-news {
       gap: 3rem;
     }
   }
-  
 
   .press-news-pages {
     padding: 2rem 0;
     display: none;
-    
+
     @media screen and (min-width: 1000.1px) {
       display: flex;
       justify-content: center;

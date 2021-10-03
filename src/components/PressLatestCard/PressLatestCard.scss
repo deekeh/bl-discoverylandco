@@ -17,6 +17,9 @@
       @media screen and (max-width: 500px) {
         min-height: 100vh;
       }
+      @media screen and (max-width: 330px) {
+        min-height: 150vh;
+      }
 
       .image {
         overflow: hidden;
@@ -62,6 +65,9 @@
         height: 70%;
         margin: 0 1rem;
         padding: 2rem;
+      }
+      @media screen and (max-width: 330px) {
+        min-height: 80%;
       }
 
       display: flex;
